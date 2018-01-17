@@ -3,15 +3,37 @@
   padding: 0;
 }
 
+.text-white{
+  color: white;
+  text-decoration: none;
+}
+
+.text-white a, .text-white a:hover{
+  color: white;
+  text-decoration: none;
+}
+
 .bg_white{
     background-color: white;
 }
 
+.bg_blue{
+  background-color: #7CD5EF;
+  overflow: hidden;
+  padding:  0px;
+}
+
+.bg_violet{
+  background-color: #8080BE;
+  overflow: hidden;
+  padding:  0px;
+}
+
+
 .navbar {
-  position: relative;
   min-height: 50px;
   margin-bottom: 20px;
-  border: px solid transparent;
+  border: 1px solid transparent;
   color: white;
 }
 
@@ -33,26 +55,82 @@
     display: inline-block;
     vertical-align: middle;
     font-weight: bold;
-    align-items: baseline;
-}
-
-.text-white{
-  color: white;
-  text-decoration: none;
-}
-
-.text-white a, .text-white a:hover{
-  color: white;
-  text-decoration: none;
 }
 
 .navbar .icon-bar{
     background: white;
 }
 
-.test{
+.navbar-toggle .icon-bar + .icon-bar {
+  margin-top: 4px;
+}
+
+.navbar-toggle:focus {
+  outline: 1;
+}
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+}
+
+.price{
   display: flex;
   text-align: left;
-  padding-left: 20px;
   justify-content: center;
+  padding-top: 15px;
+  height: auto;
+}
+
+.div_61, .div_61_inverse{
+  padding : 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.div_61_inverse{
+    flex-direction: row-reverse;
+}
+
+.div_61_img img{
+    margin: auto;
+    width: 70%;
+    border-radius: 15px;
+    background-color: white;
+    transform: translateY(20%);
+}
+
+.div_61_text {
+  padding-left: 30px;
+  padding-right: 30px;
+    text-align: left;
+}
+
+.div_61_text h3{
+    font-size: 34px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.div_61_text p{
+    font-size: 14px;
+    color: #AAA;
+}
+
+@media screen and (max-width: 400px) {
+    .div_gd_border{
+    border-left: 0px solid #BDBDBD;
+     border-right: 0px solid #BDBDBD;
+    }
+}
+
+@media screen and (min-width: 650px) {
+    .div_gd_border{
+    border-left: 1px solid #BDBDBD;
+     border-right: 1px solid #BDBDBD;
+    }
 }
