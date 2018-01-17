@@ -1,0 +1,79 @@
+#logo_dim img{
+  height: 40px;
+}
+
+#background_div1{
+    background-image: url("../img/payments-banner-graphic.png");
+}
+
+#id0{
+  height: 100vh;
+}
+
+#id1{
+  padding: 70px;
+}
+
+#id2{
+  padding: 50px;
+}
+
+#id2 img{
+  height: 60px;
+  width: 60px;
+  color: black;
+}
+
+#id3{
+  border-top: 1px solid #BDBDBD;
+  background-color: white;
+  padding: 50px;
+}
+
+#id3_height{
+  height: 50vh;
+}
+
+
+#id2, #id3, #id5{
+  color: #BDBDBD;
+}
+
+
+#id4{
+  background-color: #4C535C;
+  padding: 25px;
+}
+
+#id5{
+  height: 71vh;
+}
+
+#id5-div1{
+  background-color: #7CD5EF;
+  height: 71vh;
+  padding: 60px 50px 0px 50px;
+}
+
+#id5_div2{
+  height: 71vh;
+  padding: 90px;
+  font-size: 16px;
+}
+
+#id5_div2 h3{
+  font-size: 28px;
+  color: #666;
+}
+
+#id6{
+  font-size: 24px;
+  color: black;
+  height: 40vh;
+  padding: 40px;
+}
+
+#id7{
+  background-color: #242629;
+  height: 80vh;
+}
