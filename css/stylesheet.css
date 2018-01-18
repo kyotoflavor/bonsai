@@ -3,6 +3,12 @@
   padding: 0;
 }
 
+.body_bg_img{
+  background-image: url("../img/payments-banner-graphic.png");
+  background-size: contain;
+  height: 100vh;
+}
+
 .text-white{
   color: white;
   text-decoration: none;
@@ -75,6 +81,71 @@
   border-radius: 1px;
 }
 
+.logo_dim img{
+  height: 40px;
+}
+
+.comments{
+  color: white;
+  background-color: #8080BE;
+  padding: 10px 0px 10px 0px;
+  text-align:center;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  width : 70px;
+  height: 70px;
+  font-size: 32px;
+  border: 1px solid #CDD0D2;
+  box-shadow: 1px 4px 6px rgba(125,125,125,0.7);
+}
+
+
+.comments a{
+  color: white;
+}
+
+.comments a:hover{
+  opacity: 0,5;
+}
+
+.simple{
+  height: auto;
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
+
+.quick{
+  padding: 50px;
+}
+
+.quick img{
+  height: 60px;
+  width: 60px;
+}
+
+.prices{
+  border-top: 1px solid #BDBDBD;
+  background-color: white;
+  padding: 50px;
+}
+
+.prices_height{
+  height: auto;
+  padding: 50px;
+}
+
+.quick, .prices, .card{
+  color: .BDBDBD;
+}
+
+.card{
+  background-color: #4C535C;
+  padding: 25px;
+}
+
 .price{
   display: flex;
   text-align: left;
@@ -83,7 +154,7 @@
   height: auto;
 }
 
-.div_61, .div_61_inverse{
+.integrate , .integrate_inverse{
   padding : 0;
   display: flex;
   align-items: center;
@@ -92,11 +163,11 @@
   flex-direction: row;
 }
 
-.div_61_inverse{
+.integrate_inverse{
     flex-direction: row-reverse;
 }
 
-.div_61_img img{
+.integrate_img img{
     margin: auto;
     width: 70%;
     border-radius: 15px;
@@ -104,33 +175,88 @@
     transform: translateY(20%);
 }
 
-.div_61_text {
-  padding-left: 30px;
-  padding-right: 30px;
-    text-align: left;
+.integrate_text {
+  padding-right: 20%;
+  text-align: left;
+  transform: translatex(15%);
+  font-family: 'Tahoma',sans-serif;
+  font-size: 15px;
 }
 
-.div_61_text h3{
+.integrate_text h3{
     font-size: 34px;
-    color: #666;
+    color: .666;
     margin-bottom: 30px;
 }
 
-.div_61_text p{
+.integrate_text p{
     font-size: 14px;
     color: #AAA;
 }
 
+.ready{
+  font-size: 24px;
+  color: black;
+  height: 40vh;
+  padding: 40px;
+}
+
+.foooter{
+  background-color: #242629;
+  height: auto;
+}
+
+.foooter ul, .foooter li,.foooter h3{
+    font-family: 'Tahoma', sans-serif;
+    list-style-type: none;
+    text-align: left;
+    line-height: 30px;
+    font-weight: lighter;
+}
+
+.foooter h3{
+  color: #777768;
+}
+
+.Legal{
+  background-color: #242629;
+  height: auto;
+
+}
+
+.Legal p{
+  color: #789599;
+  text-align: left;
+  font-weight: lighter;
+  font-size: 8px;
+  line-height: 8px;
+}
+
+
+
 @media screen and (max-width: 400px) {
     .div_gd_border{
-    border-left: 0px solid #BDBDBD;
-     border-right: 0px solid #BDBDBD;
+     border-left: 0px solid .BDBDBD;
+     border-right: 0px solid .BDBDBD;
     }
+  .body_bg_img{
+     background-image: url("../img/payments-banner-graphic.png");
+     background-size: inherit;
+     height: 10vh;
+    }
+  .comments{
+    opacity: 0.5;
+  }
+
+  .comments a:hover{
+    opacity: 1;
+  }
+
 }
 
 @media screen and (min-width: 650px) {
     .div_gd_border{
-    border-left: 1px solid #BDBDBD;
-     border-right: 1px solid #BDBDBD;
+    border-left: 1px solid .BDBDBD;
+     border-right: 1px solid .BDBDBD;
     }
 }
