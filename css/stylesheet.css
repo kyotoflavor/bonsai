@@ -1,6 +1,7 @@
 *{
   margin: 0;
   padding: 0;
+  font-family: 'Cutive Mono', monospace;
 }
 
 .body_bg_img{
@@ -113,8 +114,8 @@
 
 .simple{
   height: auto;
-  padding-top: 140px;
-  padding-bottom: 140px;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 
 .quick{
@@ -137,8 +138,26 @@
   padding: 50px;
 }
 
+.prices .price{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.price span{
+    font-weight: lighter;
+}
+
+.price div{
+    height: inherit;
+}
+
+.price div span{
+    display: block;
+}
+
 .quick, .prices, .card{
-  color: .BDBDBD;
+  color: #BDBDBD;
 }
 
 .card{
@@ -148,10 +167,12 @@
 
 .price{
   display: flex;
+  flex-direction: row;
   text-align: left;
-  justify-content: center;
+  align-self: top;
   padding-top: 15px;
   height: auto;
+  font-family: 'Raleway', sans-serif;
 }
 
 .integrate , .integrate_inverse{
@@ -176,16 +197,18 @@
 }
 
 .integrate_text {
-  padding-right: 20%;
   text-align: left;
-  transform: translatex(15%);
   font-family: 'Tahoma',sans-serif;
   font-size: 15px;
+  transform: translateX(20%);
+  transform: translateY(5%);
+  padding-left: 120px;
+  padding-right: 120px;
 }
 
 .integrate_text h3{
     font-size: 34px;
-    color: .666;
+    color: #666;
     margin-bottom: 30px;
 }
 
@@ -196,17 +219,21 @@
 
 .ready{
   font-size: 24px;
-  color: black;
-  height: 40vh;
-  padding: 40px;
+  color: #BDBDBD;
+  height: auto;
+  padding: 60px;
+  border-top: 1px solid #DDDDDD;
+  background-color: #FCFCFC;
 }
 
 .foooter{
   background-color: #242629;
   height: auto;
+  padding-bottom: 50px;
+
 }
 
-.foooter ul, .foooter li,.foooter h3{
+.foooter ul, .foooter li, .foooter h3{
     font-family: 'Tahoma', sans-serif;
     list-style-type: none;
     text-align: left;
@@ -218,45 +245,58 @@
   color: #777768;
 }
 
-.Legal{
+.legal{
   background-color: #242629;
   height: auto;
 
 }
 
-.Legal p{
+.legal p{
   color: #789599;
-  text-align: left;
   font-weight: lighter;
-  font-size: 8px;
-  line-height: 8px;
+  font-size: 10px;
+  line-height: 15px;
+  padding-bottom: 25px;
 }
-
-
 
 @media screen and (max-width: 400px) {
+    .simple{
+      height: auto;
+      padding-top: 5px;
+      padding-bottom: 70px;
+    }
     .div_gd_border{
-     border-left: 0px solid .BDBDBD;
-     border-right: 0px solid .BDBDBD;
+     border-left: 0px solid #BDBDBD;
+     border-right: 0px solid #BDBDBD;
     }
-  .body_bg_img{
-     background-image: url("../img/payments-banner-graphic.png");
-     background-size: inherit;
-     height: 10vh;
+    .body_bg_img{
+       background-image: url("../img/payments-banner-graphic.png");
+       background-size: inherit;
+       height: 10vh;
+      }
+    .comments{
+      opacity: 0.5;
+      }
+
+    .comments a:hover{
+      opacity: 1;
+      }
+
+    .integrate_text {
+      text-align: left;
+      font-family: 'Tahoma',sans-serif;
+      font-size: 15px;
+      transform: translateX(10%);
+      transform: translateY(5%);
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 25px;
     }
-  .comments{
-    opacity: 0.5;
-  }
-
-  .comments a:hover{
-    opacity: 1;
-  }
-
 }
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 1000px) {
     .div_gd_border{
-    border-left: 1px solid .BDBDBD;
-     border-right: 1px solid .BDBDBD;
+    border-left: 1px solid #BDBDBD;
+     border-right: 1px solid #BDBDBD;
     }
 }
