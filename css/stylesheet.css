@@ -49,7 +49,12 @@ p{
 
 .navbar i{
   padding-top: 10px;
-  
+  opacity: 0.5;
+}
+
+.navbar i:hover{
+  padding-top: 10px;
+  opacity: 1;
 }
 
 .navbar {
@@ -274,6 +279,19 @@ p{
 
 .foooter h3{
   color: #777768;
+}
+
+.footer a{
+  color: grey;
+}
+
+.foooter a:hover{
+  color: white;
+  font-weight: bold;
+}
+
+.foooter i:hover{
+  font-weight: bold;
 }
 
 .legal{
