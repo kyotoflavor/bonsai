@@ -1,18 +1,30 @@
 *{
   margin: 0;
   padding: 0;
+  letter-spacing: 1px;
+}
+
+span{
   font-family: 'Cutive Mono', monospace;
+}
+
+p{
+  font-family: 'Overpass Mono', monospace;
 }
 
 .body_bg_img{
   background-image: url("../img/payments-banner-graphic.png");
   background-size: contain;
-  height: 100vh;
+  height: auto;
 }
 
 .text-white{
   color: white;
   text-decoration: none;
+}
+
+.text_bold_black{
+  color: #4D4D4D;
 }
 
 .text-white a, .text-white a:hover{
@@ -35,7 +47,6 @@
   overflow: hidden;
   padding:  0px;
 }
-
 
 .navbar {
   min-height: 50px;
@@ -64,6 +75,11 @@
     font-weight: bold;
 }
 
+.navbar-brand li{
+    font-family: 'Raleway',sans-serif;
+    font-weight: lighter;
+}
+
 .navbar .icon-bar{
     background: white;
 }
@@ -75,6 +91,7 @@
 .navbar-toggle:focus {
   outline: 1;
 }
+
 .navbar-toggle .icon-bar {
   display: block;
   width: 22px;
@@ -103,19 +120,27 @@
   box-shadow: 1px 4px 6px rgba(125,125,125,0.7);
 }
 
-
 .comments a{
   color: white;
 }
 
 .comments a:hover{
-  opacity: 0,5;
+  opacity: 0.5;
 }
 
 .simple{
   height: auto;
   padding-top: 70px;
-  padding-bottom: 70px;
+  padding-bottom: 50px;
+}
+
+.simple button{
+  padding: 15px 50px 15px 50px;
+  background-color: #FEFEFE;
+  color: #8380C8;
+  font-family: 'Raleway',sans-serif;
+  font-size: 18px,;
+  letter-spacing: 3px;
 }
 
 .quick{
@@ -142,6 +167,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: left;
+    padding-top: 15px;
+    height: auto;
+    font-family: 'Raleway', sans-serif;
 }
 
 .price span{
@@ -162,17 +191,8 @@
 
 .card{
   background-color: #4C535C;
-  padding: 25px;
-}
-
-.price{
-  display: flex;
-  flex-direction: row;
-  text-align: left;
-  align-self: top;
-  padding-top: 15px;
-  height: auto;
-  font-family: 'Raleway', sans-serif;
+  padding: 20px;
+  font-size: 28px;
 }
 
 .integrate , .integrate_inverse{
@@ -200,9 +220,8 @@
   text-align: left;
   font-family: 'Tahoma',sans-serif;
   font-size: 15px;
-  transform: translateX(20%);
-  transform: translateY(5%);
-  padding-left: 120px;
+  transform: translateY(1%);
+  padding-left: 100px;
   padding-right: 120px;
 }
 
@@ -239,6 +258,7 @@
     text-align: left;
     line-height: 30px;
     font-weight: lighter;
+    width: auto;
 }
 
 .foooter h3{
@@ -259,11 +279,55 @@
   padding-bottom: 25px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width:744px) and (min-width: 200px) {
+  .simple {
+    height: auto;
+    padding-top: 5px;
+    padding-bottom: 70px;
+    text-align: justify;
+  }
+  .simple button{
+    padding: 10px 25px 10px 25px;
+    background-color: #FEFEFE;
+    color: #8380C8;
+    font-family: 'Raleway',sans-serif;
+    font-size: 16px,;
+    letter-spacing: 1px;
+  }
+  .div_gd_border {
+    border-left: 0px solid #BDBDBD;
+    border-right: 0px solid #BDBDBD;
+  }
+  .body_bg_img {
+    background-image: url("../img/payments-banner-graphic.png");
+    background-size: inherit;
+    height: 10vh;
+  }
+  .comments {
+    opacity: 0.3;
+  }
+  .comments:hover{
+    opacity: 0.5;
+    color: red !important;
+  }
+  .integrate_text {
+    text-align: left;
+    font-family: 'Tahoma', sans-serif;
+    font-size: 15px;
+    transform: translateX(10%);
+    transform: translateY(1%);
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 1044px) and (min-width: 744px) {
     .simple{
       height: auto;
       padding-top: 5px;
       padding-bottom: 70px;
+      text-align: justify;
     }
     .div_gd_border{
      border-left: 0px solid #BDBDBD;
@@ -274,20 +338,12 @@
        background-size: inherit;
        height: 10vh;
       }
-    .comments{
-      opacity: 0.5;
-      }
-
-    .comments a:hover{
-      opacity: 1;
-      }
-
     .integrate_text {
       text-align: left;
       font-family: 'Tahoma',sans-serif;
       font-size: 15px;
-      transform: translateX(10%);
-      transform: translateY(5%);
+      transform: translateX(5%);
+      transform: translateY(1%);
       padding-left: 20px;
       padding-right: 20px;
       padding-bottom: 25px;
